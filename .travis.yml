@@ -10,7 +10,7 @@ before_script:
     - pip install docker-compose
 
 script:
-    - docker-compose run app sh -c "pytest main.py -p no:cacheprovider"
+    - docker-compose run app sh -c "pytest test.py -p no:cacheprovider"
 
 after_succes:
     - coveralls
