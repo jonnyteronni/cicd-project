@@ -18,6 +18,6 @@ after_succes:
 deploy:
     provider: script
     skip-cleanup: true
-    script: bash ci/travis-deploy.sh
+    script: bash script/deploy.sh
     on:
         branch: master
